@@ -12,7 +12,7 @@ Layer 2: LSTM with rnn_units number of units.
 Layer 3: Dense (fully-connected) layer that transforms the LSTM output into the vocabulary size.
 
 The RNN model is then trained using a form of the crossentropy loss (negative log likelihood loss)i.e., sparse_categorical_crossentropy loss, as it utilizes integer targets for categorical classification tasks. We will want to compute the loss using the true targets -- the labels -- and the predicted targets -- the logits.
-Hyperparameter are defined for setting and optimization. Adam optimizer is used as the optimizer for training operation. The model is trained for 30000 iterations, with batch size 10 and sequence length 100. The model learns better when the learning rate is set to 1e-3. 
+Hyperparameter are defined for setting and optimization. Adam optimizer is used as the optimizer for training operation. The model is trained for 3000 iterations, with batch size 10 and sequence length 100. The model learns better when the learning rate is set to 1e-3. 
 To generate music, the model follows a prediction procedure:
 
 Step 1: Initialize a "seed" start string and the RNN state, and set the number of characters we want to generate.
