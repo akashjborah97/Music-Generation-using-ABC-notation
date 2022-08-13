@@ -1,4 +1,4 @@
-# Music-Generation
+# Music-Generation-using-ABC-notation
 The project builds a Recurrent Neural Network (RNN) for music generation. The model is trained to to learn the patterns in raw sheet music in ABC notation, which generates music.
 The dataset is collected from kaggle and contains ABC notation of songs. Link: https://www.kaggle.com/datasets/raj5287/abc-notation-of-tunes?datasetId=156963&sortBy=dateRun&tab=profile
 The text in the dataset are first vectorised to create numeric representation to maintain a lookup table. 
