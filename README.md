@@ -24,4 +24,4 @@ the model.
 
 Step 4: At each time step, the updated RNN state is fed back into the model, so that it now has more context in making the next prediction. After predicting the next character, the updated RNN states are again fed back into the model, which is how it learns sequence dependencies in the data, as it gets more information from the previous predictions.
 
-Now, the model is ready to generate songs with a user defined "start_string" and "generation_length".
+Now, the model generate songs with a user defined "start_string" and "generation_length".
