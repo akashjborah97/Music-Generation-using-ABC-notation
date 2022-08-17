@@ -3,7 +3,7 @@ The project builds a Recurrent Neural Network (RNN) for music generation. The mo
 The dataset is collected from kaggle and contains ABC notation of songs. Link: https://www.kaggle.com/datasets/raj5287/abc-notation-of-tunes?datasetId=156963&sortBy=dateRun&tab=profile
 The text in the dataset are first vectorised to create numeric representation to maintain a lookup table. 
 We will be using some example sequences for training the RNN with a definite sequence length. There will also be a target sequence for predection the next character. This will be implemented using the batch method which will convert this stream of character indices to sequences of the desired size.
-The RNN model we create will be based on LSTM architecture, where we will use state vector to maintain information about the temporal relationships between consecutive characters. The final output of the LSTM is then fed into a fully connected Dense layer where we'll output a softmax over each character in the vocabulary, and then sample from this distribution to predict the next character.
+The RNN model we create will be based on LSTM architecture and has initializer "glorot_uniform" and activation function "sigmoid", where we will use state vector to maintain information about the temporal relationships between consecutive characters. The final output of the LSTM is then fed into a fully connected Dense layer where we'll output a softmax over each character in the vocabulary, and then sample from this distribution to predict the next character.
 
 Layer 1: Embedding layer to transform indices into dense vectors of a fixed embedding size
 
